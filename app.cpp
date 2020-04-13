@@ -2,10 +2,11 @@
 #include <fstream>
 #include <string>
 using namespace std;
-int main()
+int main(int argc, char** argv)
 {
+
     int num = 0;
-    ifstream infile("./Amir.txt");
+    ifstream infile(argv[1]);
     while (infile >> num)
     {
 
