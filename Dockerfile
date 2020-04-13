@@ -1,5 +1,4 @@
-FROM alpine
+FROM gcc
+COPY app /app/app
 WORKDIR /app
-COPY app .
-
-ENTRYPOINT ["alpine", "app"]
+ENTRYPOINT ["/app/app"]
