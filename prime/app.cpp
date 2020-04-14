@@ -13,10 +13,12 @@ int main(int argc, char** argv)
         if(num == 2 || num == 3)
         {
             cout << "1" << endl;
+            prime=false;
         }
 		else if ((num - 1) % 6 != 0 && (num + 1) % 6 != 0)
 		{
 			cout << "0" << endl;
+            prime=false;
 		}
 		else
 		{
@@ -31,7 +33,7 @@ int main(int argc, char** argv)
                 
 			}
 		}
-		if (prime=true)
+		if (prime==true)
 		{
 			cout << "1" << endl;
 		}
